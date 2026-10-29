@@ -11,7 +11,7 @@ where the code lives, and how to test it.
 - **Off in every build.** Bluetooth nearby is held on every operating system by a gate in the code
   (`NEARBY_PRODUCTION_ENABLED = false` in raven-core) until its release record
   (`core/docs/WAIVER_NEARBY_DRAFT.md`, unsigned) is signed after the hardware test rows
-  (`core/docs/PHYSICAL_NEARBY_LAPTOPS.md`), which have not been run yet.
+  (rows N1-N12, run from an unpublished test checklist), which have not been run yet.
 - **On Windows it stays inactive even in a lab build.** Raven advertises and connects only from a
   random Bluetooth address, so that nearby devices cannot follow one computer around. Windows does
   not say which address its adverts or its connections go out from, so Raven treats both as the
@@ -88,5 +88,6 @@ lab switch. While it runs, the PC's fixed Bluetooth address is visible to device
 
 ## License
 
-GNU Affero General Public License v3.0 (`LICENSE`). Security issues: please write to
+Copyright (C) 2026 ASHCO. GNU Affero General Public License v3.0 (`LICENSE`; notice and pending
+additional terms in `NOTICE`). Security issues: please write to
 security@raven-messager.com (`SECURITY.md`), not a public issue.
